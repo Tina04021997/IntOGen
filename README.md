@@ -1,4 +1,10 @@
 # IntOGen under AWS
+## Creating IntOGen inputs
+The input files are **metadata.bginfo** and **data_mutations_extended.txt**
+1. metadata.bginfo:
+   Change every time for "PLATFORM", "CANCER", and "GENOMERF"
+2. 
+
 ## Using AWS EC2 instances
 1. Login AWS account
 2. Go to the top right corner, choose the *us-west-1* channel (US West (N.California))
@@ -11,8 +17,14 @@
    - Key pair
 
 ## Running IntOGen in the instance
-1. Create the intogen bash script `DCIS_new.sh` under intogen-plus folder
-2. 
+1. Create the intogen bash script `sample.sh` under intogen-plus folder
+2. Run the script:
+   - Create a new screen
+   - do `conda activate intogenbuild`
+   - do `sort -V data_mutations_extended.txt` before running IntOGen
+   - go to intogen-plus folder and do`./sample.sh > ~/intogen-plus/ERRORandOUTPUTs/output.txt 2>~/intogen-plus/ERRORandOUTPUTs/error.txt`
+
+     *Note: The fisrt arrow will store the standard output and the second arrow will store the standard error*
 
 ## Creating key pairs
 1. Create an instance and at the Key pair section, create a new key
@@ -29,4 +41,8 @@
 
 ## Downloading files from AWS instance to local
 `scp -i Tina_intogen_2023.pem ubuntu@ec2-54-183-11-225.us-west-1.compute.amazonaws.com:/home/ubuntu/intogen-plus/INPUTS/DCIS_new/data_mutations_extended.txt /Users/tingyang/Desktop/`
+
+## Extra notes
+1. Before terminate any instance, all the files in the hardware will disappear so download everything you need before terminate any instances
+2. Go to AWS volumn and put your name in the tag and remember to shut down the instance attached volumn after terminating the insaance if needed
 
