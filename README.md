@@ -14,3 +14,6 @@
 
 >   *See https://www.youtube.com/watch?v=30JmjvJ-DtI if more explanation is needed*
 
+## Downloading files from AWS instance to local
+`scp -i Tina_intogen_2023.pem ubuntu@ec2-54-183-11-225.us-west-1.compute.amazonaws.com:/home/ubuntu/intogen-plus/INPUTS/DCIS_new/data_mutations_extended.txt /Users/tingyang/Desktop/`
+
