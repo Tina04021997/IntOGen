@@ -1,5 +1,15 @@
 # AWS
-## Using AWS
+## Using AWS EC2 instances
+1. Login AWS account
+2. Go to the top right corner, choose the *us-west-1* channel (US West (N.California))
+3. Choose *EC2* console
+4. Go to Images > AMIs
+5. Select your idea instance (e.g., Phoebe-intogen-plus) and hit *launch instance from AMI*
+6. Modify
+   - Name and tags
+   - Instance type: e.g., c5-18xlarge
+   - Key pair
+
 
 ## Creating key pairs
 1. Create an instance and at the Key pair section, create a new key
