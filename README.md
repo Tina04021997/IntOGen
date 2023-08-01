@@ -1,4 +1,4 @@
-# AWS
+# IntOGen under AWS
 ## Using AWS EC2 instances
 1. Login AWS account
 2. Go to the top right corner, choose the *us-west-1* channel (US West (N.California))
@@ -10,6 +10,9 @@
    - Instance type: e.g., c5-18xlarge
    - Key pair
 
+## Running IntOGen in the instance
+1. Create the intogen bash script `DCIS_new.sh` under intogen-plus folder
+2. 
 
 ## Creating key pairs
 1. Create an instance and at the Key pair section, create a new key
