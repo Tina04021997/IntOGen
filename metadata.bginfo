@@ -1,0 +1,11 @@
+pattern = "*/data_mutations_extended.txt"
+recursive = False
+
+[annotations]
+PLATFORM=WXS
+CANCER=BRCA
+DATASET = "('dirname', '(.*)', lambda v: '{{PLATFORM}}_{}'.format(v.upper().replace('-', '_')))"
+GENOMEREF = "hg38"
+
+
+DONOR = "('internal', 'SAMPLE')"
