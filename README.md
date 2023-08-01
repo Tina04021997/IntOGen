@@ -3,7 +3,8 @@
 The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 1. metadata.bginfo:
    Change every time for "PLATFORM", "CANCER", and "GENOMERF"
-2. 
+2. data_mutations_extended.txt:
+   
 
 ## Using AWS EC2 instances
 1. Login AWS account
