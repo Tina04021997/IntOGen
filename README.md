@@ -32,7 +32,7 @@ The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 2. You will get a pem file, place it on your local desktop
 3. On the terminal, do `chmod 400 Tina_intogen_2023.pem` to change the permission
 4. Go back to your AWS instance and copy the *Public IPv4 DNS* Address
-5. In your terminal, do `ssh -i Tina_intogen_2023.pem ubuntu@{IPv4 address}` (make sure it is **ubuntu**)
+5. In your terminal, go to where you put your key and than do `ssh -i Tina_intogen_2023.pem ubuntu@{IPv4 address}` (make sure it is **ubuntu**)
 
    e.g., `ssh -i Tina_intogen_2023.pem ubuntu@ec2-54-183-11-225.us-west-1.compute.amazonaws.com`
 
