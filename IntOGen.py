@@ -23,11 +23,10 @@ def transform_values(row):
 
 # %%
 def IntOGen_input(file):
-    WORK_PATH = "/Users/tingyang/Desktop/IntOGen_OL/GBC"
     header = ['Chromosome', 'Start_position', 'End_position', 'Variant_Type', 'Reference_Allele',
           'Tumor_Seq_Allele1', 'Tumor_Seq_Allele2', 'Tumor_Sample_Barcode']
     # Read desired columns from vcf files
-    df = pd.read_csv(WORK_PATH + '/' + file, sep='\t', header=None, usecols=[0, 1, 3, 4])
+    df = pd.read_csv(folder_path + '/' + file, sep='\t', header=None, usecols=[0, 1, 3, 4])
     # Remove "chr" in Chromosome column
     df[0] = df[0].str.replace('chr', '')
     # Renidex 
