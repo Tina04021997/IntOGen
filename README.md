@@ -43,6 +43,9 @@ The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 ## Downloading files from AWS instance to local
 `scp -i Tina_intogen_2023.pem ubuntu@ec2-54-183-11-225.us-west-1.compute.amazonaws.com:/home/ubuntu/intogen-plus/INPUTS/DCIS_new/data_mutations_extended.txt /Users/tingyang/Desktop/`
 
+## Uploading files from local to AWS instance
+`scp -i Tina_intogen_2023.pem /Users/tingyang/Desktop/IntOGen_OL/input_GBC/data_mutations_extended.txt ubuntu@ec2-54-183-11-225.us-west-1.compute.amazonaws.com:/home/ubuntu/intogen-plus/INPUTS/`
+
 ## Extra notes
 1. Before terminate any instance, all the files in the hardware will disappear so download everything you need before terminate any instances
 2. Go to AWS volumn and put your name in the tag and remember to shut down the instance attached volumn after terminating the insaance if needed
