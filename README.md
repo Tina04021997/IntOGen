@@ -26,7 +26,7 @@ The input files are **metadata.bginfo** and **data_mutations_extended.txt**
    - go to intogen-plus folder and change your bash file's permission by `chmod +x sample.sh`
    - do `./sample.sh > ~/intogen-plus/ERRORandOUTPUTs/output.txt 2>~/intogen-plus/ERRORandOUTPUTs/error.txt`
 
-     *Note: The fisrt arrow will store the standard output and the second arrow will store the standard error*
+   > *Note: The fisrt arrow will store the standard output and the second arrow will store the standard error*
 
 ## Creating key pairs
 1. Create an instance and at the Key pair section, create a new key
