@@ -44,7 +44,7 @@ The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 ## Output file interpretation
 1. Go to `./run_files/output/sample/` and get `drivers.tsv`
 2. Remove genes that are:
-   - “combination” (too weak to be called as driver genes, not enough evidence called by the 7 callers) or
+   - “combination” (too weak to be called as driver genes, not enough evidence called by the 7 callers)
 	- q-value combination score > 0.05
 
 ## Downloading files from AWS instance to local
