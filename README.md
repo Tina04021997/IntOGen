@@ -41,6 +41,12 @@ The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 
 >   *See https://www.youtube.com/watch?v=30JmjvJ-DtI if more explanation is needed*
 
+## Output file interpretation
+1. Go to `./run_files/output/sample/` and get `drivers.tsv`
+2. Remove genes that are:
+   - “combination” (too weak to be called as driver genes, not enough evidence called by the 7 callers) or
+	- q-value combination score > 0.05
+
 ## Downloading files from AWS instance to local
 `scp -i Tina_intogen_2023.pem ubuntu@ec2-54-183-11-225.us-west-1.compute.amazonaws.com:/home/ubuntu/intogen-plus/INPUTS/DCIS_new/data_mutations_extended.txt /Users/tingyang/Desktop/`
 
