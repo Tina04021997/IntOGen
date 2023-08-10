@@ -56,4 +56,5 @@ The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 ## Extra notes
 1. Before terminate any instance, all the files in the hardware will disappear so download everything you need before terminate any instances
 2. Go to AWS volumn and put your name in the tag and remember to shut down the instance attached volumn after terminating the insaance if needed
+3. Use `shared_mut.py` to find the common driver gene section
 
