@@ -3,7 +3,7 @@
 The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 1. metadata.bginfo:
    Change every time for "PLATFORM", "CANCER", and "GENOMERF"
-2. data_mutations_extended.txt:
+2. data_mutations_extended.txt: combined mutation information adjusted for IntOGen input. Apply `IntOGen.py` to modify all the vcf files.
    
 
 ## Using AWS EC2 instances
