@@ -51,6 +51,6 @@ for file in file_names:
 result_df = pd.concat(dataframes, axis=0, ignore_index=True)
 
 # Save the dataframe as a tab-delimited text file with headers
-result_df.to_csv('data_mutations_extended.txt', sep='\t', index=False)   
+result_df.to_csv(os.path.join(folder_path, 'data_mutations_extended.txt'), sep='\t', index=False)
 
 
