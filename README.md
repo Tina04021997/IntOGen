@@ -6,7 +6,7 @@ The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 2. data_mutations_extended.txt: combined mutation information adjusted for IntOGen input. Apply `IntOGen.py` to modify all the vcf files.
    
 
-## Using AWS EC2 instances
+## Lunching AWS EC2 instances
 1. Login AWS account
 2. Go to the top right corner, choose the *us-west-1* channel (US West (N.California))
 3. Choose *EC2* console
