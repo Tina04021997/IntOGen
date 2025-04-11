@@ -48,7 +48,7 @@ The input files are **metadata.bginfo** and **data_mutations_extended.txt**
 	- q-value combination score < 0.05
 
 ## Downloading files from AWS instance to local
-`scp -i Tina_intogen_2023.pem ubuntu@ec2-54-183-11-225.us-west-1.compute.amazonaws.com:/home/ubuntu/intogen-plus/INPUTS/DCIS_new/data_mutations_extended.txt /Users/tingyang/Desktop/`
+`scp -i Tina_intogen_2023.pem ubuntu@ec2-18-144-133-235.us-west-1.compute.amazonaws.com:/home/ubuntu/run_files/outputs/OPMD/drivers.tsv /Users/tingyang/Desktop/`
 
 ## Uploading files from local to AWS instance
 `scp -i Tina_intogen_2023.pem /Users/tingyang/Desktop/IntOGen_OL/input_LK/data_mutations_extended.txt ubuntu@ec2-52-53-197-38.us-west-1.compute.amazonaws.com:/home/ubuntu/intogen-plus/INPUTS/LK`
